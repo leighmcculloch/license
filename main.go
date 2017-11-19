@@ -46,7 +46,7 @@ func main() {
 
 	name := strings.ToLower(args[0])
 
-	text, ok := licenses.Get(name)
+	text, ok := licenses.Text(name)
 	if !ok {
 		fmt.Fprintf(os.Stderr, "License %s is not known.\n", name)
 		alts := []string{}
