@@ -27,7 +27,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "  ")
 			for k := 0; k < cols && i+k < len(names); k++ {
 				name := names[i+k]
-				fmt.Fprintf(os.Stderr, "%-20s", name)
+				fmt.Fprintf(os.Stderr, "%-15s", name)
 			}
 			fmt.Fprintf(os.Stderr, "\n")
 		}
